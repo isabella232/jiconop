@@ -21,7 +21,7 @@ sudo su
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
 wget -qO - https://repo.jitsi.net/debian/unstable/archive.key | sudo apt-key add -
-echo 'deb http://download.jitsi.org/nightly/deb unstable/' > /etc/apt/sources.list.d/jitsi-backup.list
+echo 'deb https://jitsi:j1ts1r3p0@repo.jitsi.net/debian unstable/' > /etc/apt/sources.list.d/jitsi-backup.list
 apt-get update
 apt-get install jiconop
 service jiconop start
